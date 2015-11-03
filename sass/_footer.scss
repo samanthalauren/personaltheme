@@ -1,3 +1,17 @@
 footer {
 	clear: both;
+	background: #e5eae9;
+	padding: 1px;
+	display: flex;
+	p {
+		color: black;
+		display: flex;
+	}
+}
+.social {
+	display: flex;
+	li {
+		list-style: none;
+		margin: 0 5px;
+	}
 }

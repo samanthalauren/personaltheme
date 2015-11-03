@@ -5,28 +5,32 @@
 
     <div class="content">
       <?php // Start the loop ?>
+     <div class="first">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-        <h2><?php the_title(); ?></h2>
         <?php the_content(); ?>
-
+      </div>
+      <div class="aboutBlurbs">
+        <div class="left">
+          <i class="fa fa-angle-double-right"></i>
+          <?php the_field('education'); ?>
+        </div>
+         <div class="right">
+          <i class="fa fa-angle-double-right"></i>
+          <?php the_field('services'); ?>
+        </div>
+        <div class="left">
+          <i class="fa fa-angle-double-right"></i>
+          <?php the_field('personal'); ?>
+        </div>
+        <div class="right">
+          <i class="fa fa-angle-double-right"></i>
+          <?php the_field('tools'); ?>
+        </div>
+      </div>
       <?php endwhile; // end the loop?>
 
-      <h2>Featured Work </h2>
-
-      <?php $portfolioQuery = new WP_query (
-            array (
-                'post_type' => 'portfolio'
-              )
-      ); ?>
-
-      <?php if ($portfolioQuery->have_posts()): ?>
-        <?php while($portfolioQuery->have_posts()): $portfolioQuery->the_post(); ?>
-
     </div> <!-- /,content -->
-    <p>ON THIS PAGE</p>
 
-    <?php get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

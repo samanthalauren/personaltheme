@@ -54,6 +54,12 @@ function hackeryou_scripts() {
   	null, //version number
   	true //load in footer
   );
+   wp_enqueue_script(
+  	'flickity',
+  	get_template_directory_uri() . '/js/flickity.pkgd.min.js',
+  	array('jquery'), //version number
+  	true //load in footer
+  );
 
   wp_enqueue_script(
     'plugins', //handle
@@ -66,7 +72,7 @@ function hackeryou_scripts() {
   wp_enqueue_script(
     'scripts', //handle
     get_template_directory_uri() . '/js/main.min.js', //source
-    array( 'jquery', 'plugins' ), //dependencies
+    array( 'jquery', 'plugins','flickity' ), //dependencies
     null, // version number
     true //load in footer
   );
@@ -268,3 +274,4 @@ function get_post_parent($post) {
 }
 
 // show_admin_bar( false );
+
