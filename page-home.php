@@ -5,7 +5,7 @@
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
     <?php the_content(); ?>
     <!-- flickity -->
-    <div class="main-gallery">
+    <div class="main-gallery" >
       <?php while( has_sub_field('images')): ?>
         <div class="gallery-cell">
           <img src="<?php the_sub_field('image'); ?>" alt="">
@@ -31,9 +31,10 @@
           </div>
           <div class="button">
             <?php the_field('button'); ?>
-          </div>
-      </div>
-    </div>
+          </div> <!-- button -->
+      </div> <!-- recentWorks -->
+    </div> <!-- block -->
+    <div class="working"><p><?php the_field('quote'); ?></p></div>
     <?php endwhile; // end the loop?>
 </div> <!-- /.main -->
 
