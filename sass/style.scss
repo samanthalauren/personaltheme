@@ -32,6 +32,7 @@ img {
 
 body {
 	color: #b9c9c5;
+	font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -53,6 +54,7 @@ body {
 .container {
 	h1 {
 		width: 40%;
+		float: left;
 	}
 }
 
@@ -64,7 +66,7 @@ body {
 
 //FLICKITY
 .main-gallery{
-	margin-top: 140px;
+	margin-top: 100px;
 	height: 450px;
 	width: 100%;
 }

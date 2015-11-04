@@ -2,14 +2,16 @@
 	ul {
 		list-style: none;
 		display: flex;
+		justify-content:space-between;
+		float: right;
 		width: 40%;
-		border: 1px solid red;
 		li {
-			margin: 0 10px;
-			font-family: 'Nobile', sans-serif;
+			margin: 10px 10px 0;
+			font-family: 'Lato', sans-serif;
 			text-transform: uppercase;
-			font-size: .8rem;
-			letter-spacing: .1rem;
+			font-size: .7rem;
+			letter-spacing: .2rem;
+			font-weight: 600;
 		}
 		li:hover {
 			text-decoration: underline;

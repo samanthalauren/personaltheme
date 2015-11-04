@@ -273,5 +273,5 @@ function get_post_parent($post) {
 	}
 }
 
-// show_admin_bar( false );
+show_admin_bar( false );
 

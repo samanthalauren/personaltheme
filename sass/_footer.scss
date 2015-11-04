@@ -3,15 +3,25 @@ footer {
 	background: #e5eae9;
 	padding: 1px;
 	display: flex;
+	width: 100%;
 	p {
 		color: black;
 		display: flex;
+		float: left;
+		width: 60%;
+		font-size: .7rem;
+		margin: 25px 100px 0 -380px;
 	}
 }
 .social {
 	display: flex;
+	float: right;
+	width: 10%;
 	li {
 		list-style: none;
-		margin: 0 5px;
+		margin: 0 10px;
+	}
+	li:first-child {
+		margin-left: 240px;
 	}
 }
