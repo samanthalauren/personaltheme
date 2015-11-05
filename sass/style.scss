@@ -31,8 +31,8 @@ img {
 }
 
 body {
-	color: #b9c9c5;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	color: #51514f;
 }
 
 .container {
@@ -57,6 +57,7 @@ body {
 	letter-spacing: .1rem;
 	font-size: 1.5rem;
 	margin-top: -20px;
+	color: #51514f;
 }
 .tagline {
 	font-family: 'Work Sans', sans-serif;
@@ -66,7 +67,7 @@ body {
 	font-size: .77rem;
 	margin: -8px 0 0 30px;
 	padding: 0;
-	color: grey;
+	color: #97a8a3;
 }
 
 .container {
@@ -77,9 +78,11 @@ body {
 }
 
 .aboutMe {
-	width: 50%;
+	width: 45%;
 	margin: 100px auto;
-	color: black;
+	color: #51514f;
+	font-size: .9rem;
+	font-weight: 300;
 }
 
 //FLICKITY
@@ -100,14 +103,37 @@ body {
 .flickity-page-dots {
 	display: none;
 }
-// .flickity-prev-next-button {
-// 	svg {
-// 		left: 100px;
-// 	}
-// }
+.flickity-prev-next-button {
+	background: transparent;
+	display: none;
+}
+
+//HOME BLURB
+.homeTitle {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+button {
+	margin: 15px 0 15px 38%;
+	background: white;
+	border: 3px solid #97a8a3;
+	text-transform: uppercase;
+	font-size: .8rem;
+	padding: 10px 20px;
+	letter-spacing: .1rem;
+	font-weight: 700;
+	color: #51514f;
+	transition: all 1s;
+}
+button:hover {
+	color: white;
+	background: #97a8a3;
+}
 //HOME PAGE RECENT WORK
 .block {
-	background: #dee8e5;
+	background: #f4f7f6;
 	width: 100%;
 	padding: 40px;
 	margin-bottom: 50px;
@@ -163,17 +189,61 @@ body {
 }
 
 .working {
-	color: black;
 	text-align: center;
-	margin: 100px auto;
+	margin: 100px auto 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #51514f;
+}
+.touch {
+	margin: -10px auto 100px;
+	width: 15%;
+	a {
+	text-align: center;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: .2rem;
+	font-size: 1.2rem;
+	color: #b9c9c5;
+	transition: all 1s;
+	}
+}
+.touch a:hover {
+	color: #51514f;
 }
 
 //ABOUT PAGE
 .first {
-	width: 70%;
+	width: 80%;
 	margin: 200px auto;
+	color: #51514f;
+	font-size: .9rem;
+	font-weight: 300;
+	line-height: 5px;
+	background: #f4f7f6;
+	padding: 2%;
+	p {
+		width: 85%;
+		margin: 0 auto;
+	}
+	img {
+		margin: -60px 40px 0 -20px;
+	}
 }
-
+.about {
+	background: #dee8e5;
+	width: 100%;
+	text-align: center;
+	padding: 2%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.5rem;
+	letter-spacing: 0.2rem;
+}
 .aboutBlurbs {
 	width: 70%;
 	margin: 200px auto;
@@ -187,4 +257,107 @@ body {
 .left {
 	width: 35%;
 }
+
+//PORTFOLIO
+
+.portfolio-gallery {
+	p {
+		display: flex;
+	}
+	img {
+		width: 500px;
+	}
+}
+//CONTACT PAGE
+.contactFirst {
+	margin: 0px auto 0;
+	background: #dee8e5;
+	padding: 80px;
+	p {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+.contactHeader {
+	text-transform: uppercase;
+	margin: 100px auto;
+	text-align: center;
+	color: red;
+	z-index: 99;
+}
+fieldset {
+	border: none;
+}
+form {
+	margin: 0 auto 50px;
+	width: 50%;
+	margin-top: 70px;
+	#frm_field_8_container {
+		margin: 20px;
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		font-family: 'Work Sans', sans-serif;
+		letter-spacing: .1rem;
+		input {
+			border: 3px solid #97a8a3;
+		}
+	}
+	#frm_field_9_container {
+		margin: 20px;
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		font-family: 'Work Sans', sans-serif;
+		letter-spacing: .1rem;
+		input {
+			border: 3px solid #97a8a3;
+		}
+	}
+	#frm_field_10_container {
+		margin: 20px;
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		font-family: 'Work Sans', sans-serif;
+		letter-spacing: .1rem;
+		input {
+			border: 3px solid #97a8a3;
+		}
+	}
+	#frm_field_12_container {
+		margin: 20px;
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		font-family: 'Work Sans', sans-serif;
+		letter-spacing: .1rem;
+		textarea {
+			border: 3px solid #97a8a3;
+		}
+	}
+}
+.frm_submit {
+	input {
+		background: transparent;
+		border: 3px solid #97a8a3;
+		text-transform: uppercase;
+		padding: 10px 20px;
+		font-size: .8rem;
+		margin: 0 0 0 42%;
+		transition: all 1s;
+	}
+	input:hover {
+	color: white;
+	background: #97a8a3;
+	}
+}
+
+
+//CREDITS 
+//Contact page image: Olu Eletu from Unsplash
+
+
+
+
 

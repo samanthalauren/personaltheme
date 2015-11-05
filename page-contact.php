@@ -1,13 +1,12 @@
 <?php get_header();  ?>
 
 <div class="main">
-  <div class="container">
-
-    <div class="content">
       <?php // Start the loop ?>
-     <div class="first">
+      <div class="contactHeader"> <?php the_content(); ?> </div>
+      <div class="content">
+     <div class="contactFirst">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-       <div class="contactHeader"> <?php the_content(); ?> </div>
+       <p><?php the_field('paragraph'); ?></p>
       </div>
 
       <div class="form">

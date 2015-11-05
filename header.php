@@ -11,6 +11,7 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
   <?php // Load our CSS ?>
+  <link rel="stylesheet" href="<?php bloginfo('template_url')?>/sass/Hover-master/css/hover.css">
    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/flickity.min.css" media="screen">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
@@ -34,6 +35,7 @@
       'container' => false,
       'theme_location' => 'primary'
     )); ?>
+   <!--  hvr-underline-from-left -->
   </div>
   </div> <!-- /.container -->
 </header><!--/.header-->

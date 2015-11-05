@@ -13,7 +13,9 @@
       <?php endwhile; ?>
     </div>
     <div class="aboutMe">
+      <p class="homeTitle">Front end development + Design</p>
       <?php the_field('blurb'); ?>
+      <a href="index.php?page_id=15"><button>Learn More</button></a>
     </div>
     <div class="block">
       <div class="recentWork">
@@ -35,6 +37,7 @@
       </div> <!-- recentWorks -->
     </div> <!-- block -->
     <div class="working"><p><?php the_field('quote'); ?></p></div>
+    <div class="touch"><a href="index.php?page_id=19"><?php the_field('touch'); ?></a></div>
     <?php endwhile; // end the loop?>
 </div> <!-- /.main -->
 

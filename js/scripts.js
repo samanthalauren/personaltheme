@@ -6,7 +6,8 @@ $(function(){
 	  cellAlign: 'center',
 	  contain: true,
 	  imagesLoaded: true,
-	  wrapAround: true
+	  wrapAround: true,
+	  autoPlay: true
 	});
 
 });

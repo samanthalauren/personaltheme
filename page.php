@@ -9,6 +9,9 @@
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <?php the_content(); ?>
       </div>
+    </div>
+    </div>
+      <div class="about"><?php the_field('title'); ?></div>
       <div class="aboutBlurbs">
         <div class="left">
           <i class="fa fa-angle-double-right"></i>
