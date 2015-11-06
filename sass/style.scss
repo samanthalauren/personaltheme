@@ -57,6 +57,7 @@ body {
 	letter-spacing: .1rem;
 	font-size: 1.5rem;
 	margin-top: -20px;
+	margin-left: 20px;
 	color: #51514f;
 }
 .tagline {
@@ -65,7 +66,7 @@ body {
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	font-size: .77rem;
-	margin: -8px 0 0 30px;
+	margin: -8px 0 0 50px;
 	padding: 0;
 	color: #97a8a3;
 }
@@ -135,7 +136,7 @@ button:hover {
 .block {
 	background: #f4f7f6;
 	width: 100%;
-	padding: 40px;
+	padding: 80px;
 	margin-bottom: 50px;
 }
 .recentWork {
@@ -190,7 +191,7 @@ button:hover {
 
 .working {
 	text-align: center;
-	margin: 100px auto 0;
+	margin: 150px auto 0;
 	padding: 0;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -198,7 +199,7 @@ button:hover {
 	color: #51514f;
 }
 .touch {
-	margin: -10px auto 100px;
+	margin: -10px auto 150px;
 	width: 15%;
 	a {
 	text-align: center;
@@ -261,12 +262,54 @@ button:hover {
 //PORTFOLIO
 
 .portfolio-gallery {
-	p {
-		display: flex;
-	}
-	img {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 120px auto;
+	position: relative;
+	.gallery-cell {
 		width: 500px;
+		height: 500px;
+		margin: 10px 10px;
+		overflow: hidden;
+		 position: relative;
+		img {
+			width: 100%;
+			overflow: hidden;
+			 -webkit-transition: all 0.3s ease;
+     		-moz-transition: all 0.3s ease;
+      		 -o-transition: all 0.3s ease;
+      		-ms-transition: all 0.3s ease;
+         	 transition: all 0.3s ease;
+         	 overflow: hidden;
+		}
+		img:hover {
+		  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  		  -moz-transform:scale(1.25); /* Firefox */
+   		 -ms-transform:scale(1.25); /* IE 9 */
+   		 -o-transform:scale(1.25); /* Opera */
+  		   transform:scale(1.25);
+  		   overflow: hidden;
+
+		}
 	}
+}
+.description {
+	height: 500px;
+	width: 500px;
+	background: rgba(255,255,255,0.4);
+	z-index: 999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	visibility: hidden;
+	transition: all 0.7s;
+}
+.description:hover {
+	visibility: visible;
+	z-index: 999;
+	transition: all 0.7s;
 }
 //CONTACT PAGE
 .contactFirst {
