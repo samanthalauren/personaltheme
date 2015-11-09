@@ -18,23 +18,23 @@
       <a href="index.php?page_id=15"><button>Learn More</button></a>
     </div>
     <div class="block">
-      <div class="recentWork">
+<!--       <div class="recentWork">
           <div class="two-thirds">
-            <img src="<?php the_field('large'); ?>" alt="">
+            <img src="<?php //the_field('large'); ?>" alt="">
           </div>
           <div class="one-third">
-            <img src="<?php the_field('medium'); ?>" alt="">
+            <img src="<?php //the_field('medium'); ?>" alt="">
           </div>
           <div class="half">
-            <img src="<?php the_field('smaller'); ?>" alt="">
+            <img src="<?php //the_field('smaller'); ?>" alt="">
           </div>
           <div class="smaller-half">
-            <img src="<?php the_field('smallest'); ?>" alt="">
+            <img src="<?php //the_field('smallest'); ?>" alt="">
           </div>
           <div class="button">
-            <?php the_field('button'); ?>
+            <p><a href="index.php?page_id=17"><?php the_field('button'); ?></a></p>
           </div> <!-- button -->
-      </div> <!-- recentWorks -->
+      <!-- </div>  --><!-- recentWorks --> 
     </div> <!-- block -->
     <div class="working"><p><?php the_field('quote'); ?></p></div>
     <div class="touch"><a href="index.php?page_id=19"><?php the_field('touch'); ?></a></div>

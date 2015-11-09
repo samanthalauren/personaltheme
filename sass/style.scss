@@ -24,6 +24,7 @@ header {
 	z-index: 9999;
 	background: white;
 	width: 100%;
+	-webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -33,6 +34,7 @@ img {
 body {
 	font-family: 'Work Sans', sans-serif;
 	color: #51514f;
+	 -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -52,7 +54,7 @@ body {
 //HOME PAGE
 .title {
 	font-family: 'Work Sans', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	font-size: 1.5rem;
@@ -62,7 +64,7 @@ body {
 }
 .tagline {
 	font-family: 'Work Sans', sans-serif;
-	font-weight: 300;
+	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	font-size: .77rem;
@@ -134,7 +136,7 @@ button:hover {
 }
 //HOME PAGE RECENT WORK
 .block {
-	background: #f4f7f6;
+	background:#dee8e5;
 	width: 100%;
 	padding: 80px;
 	margin-bottom: 50px;
@@ -147,7 +149,7 @@ button:hover {
 	.two-thirds {
 		width: 60%;
 		height: 300px;
-		padding: 2px;
+		padding: 3px;
 		img {
 			width: 100%;
 			height: 100%;
@@ -156,7 +158,7 @@ button:hover {
 	.one-third {
 		width: 40%;
 		height: 300px;
-		padding: 2px;
+		padding: 3px;
 		img {
 			width: 100%;
 			height: 100%;
@@ -165,7 +167,7 @@ button:hover {
 	.half {
 		width: 50%;
 		height: 200px;
-		padding: 2px;
+		padding: 3px;
 		img {
 			width: 100%;
 			height: 100%;
@@ -174,18 +176,35 @@ button:hover {
 	.smaller-half {
 		width: 25%;
 		height: 200px;
-		padding: 2px;
+		padding: 3px;
 		img {
 			width: 100%;
 			height: 100%;
 		}
 	}
 	.button {
-		width: 25%;
-		height: 200px;
-		padding: 2px;
-		background: grey;
+		width: 24.6%;
+		height: 197px;
+		padding: 3px;
+		margin-top: 2px;
+		background: #97a8a3;
 	}
+	.button p {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 30%;
+	font-size: 1.5rem;
+	font-weight: 500;
+	letter-spacing: .2rem;
+	a {
+		color: white;
+		transition: all 1s;
+	}
+	a:hover {
+		color: grey;
+	}
+}
 
 }
 
@@ -208,7 +227,7 @@ button:hover {
 	font-weight: 500;
 	letter-spacing: .2rem;
 	font-size: 1.2rem;
-	color: #b9c9c5;
+	color:  #97a8a3;
 	transition: all 1s;
 	}
 }
@@ -238,7 +257,7 @@ button:hover {
 	background: #dee8e5;
 	width: 100%;
 	text-align: center;
-	padding: 2%;
+	padding: 5%;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -246,87 +265,104 @@ button:hover {
 	letter-spacing: 0.2rem;
 }
 .aboutBlurbs {
-	width: 70%;
-	margin: 200px auto;
+	width: 100%;
+	margin: 100px auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding: 5%;
+	font-weight: 300;
+	font-size: .9rem;
+	letter-spacing: 0.1rem;
+	div:first-line {
+		font-weight: 700;
+		letter-spacing: .2rem;
+	}
+	div {
+		width: 32%;
+	}
+
 }
-.right {
-	width: 35%;
-}
-.left {
-	width: 35%;
-}
+
 
 //PORTFOLIO
 
-.portfolio-gallery {
-	display: flex;
-	flex-wrap: wrap;
-	width: 90%;
-	margin: 120px auto;
-	position: relative;
-	.gallery-cell {
-		width: 500px;
-		height: 500px;
-		margin: 10px 10px;
-		overflow: hidden;
-		 position: relative;
-		img {
-			width: 100%;
-			overflow: hidden;
-			 -webkit-transition: all 0.3s ease;
-     		-moz-transition: all 0.3s ease;
-      		 -o-transition: all 0.3s ease;
-      		-ms-transition: all 0.3s ease;
-         	 transition: all 0.3s ease;
-         	 overflow: hidden;
-		}
-		img:hover {
-		  -webkit-transform:scale(1.25); /* Safari and Chrome */
-  		  -moz-transform:scale(1.25); /* Firefox */
-   		 -ms-transform:scale(1.25); /* IE 9 */
-   		 -o-transform:scale(1.25); /* Opera */
-  		   transform:scale(1.25);
-  		   overflow: hidden;
-
-		}
+.portfolioFirst {
+	margin-top: 100px;
+	img {
+		width: 350px;
+		height: 300px;
+		margin: 10px 0 0 15%;
 	}
 }
+.gallery-cell {
+	background:#dee8e5;
+	margin: 30px auto;
+	width: 45%;
+	position: relative;
+	padding: 20px;
+	height: 550px;
+}
 .description {
-	height: 500px;
-	width: 500px;
-	background: rgba(255,255,255,0.4);
-	z-index: 999;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	visibility: hidden;
-	transition: all 0.7s;
+	margin-bottom: 60px;
+	.view {
+		text-transform: uppercase;
+		border: 1px solid grey;
+		padding: 10px;
+		width: 24.6%;
+		height: 197px;
+		padding: 3px;
+		margin-top: 2px;
+		background: #97a8a3;
+	}
+	.view {
+	margin: 10px 0;
+	background: white;
+	border: 3px solid #97a8a3;
+	text-transform: uppercase;
+	font-size: .8rem;
+	padding: 10px 20px;
+	letter-spacing: .1rem;
+	font-weight: 700;
+	color: #51514f;
+	transition: all 1s;
+	}
+	.view:hover {
+	color: white;
+	background: #97a8a3;
+	}
 }
-.description:hover {
-	visibility: visible;
-	z-index: 999;
-	transition: all 0.7s;
+.portfolio-gallery {
+	display: flex;
+	flex-wrap:wrap;
 }
+.titleTwo {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.1rem;
+	letter-spacing: 0.1rem;
+}
+
 //CONTACT PAGE
 .contactFirst {
 	margin: 0px auto 0;
 	background: #dee8e5;
-	padding: 80px;
+	padding: 80px 80px 5px;
 	p {
 		width: 80%;
 		margin: 0 auto;
 	}
+	i {
+		margin:50px 48% 10px;
+		font-size: 3rem;
+	}
 }
 .contactHeader {
-	text-transform: uppercase;
-	margin: 100px auto;
 	text-align: center;
-	color: red;
-	z-index: 99;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin: 50px 0 30px;
 }
 fieldset {
 	border: none;

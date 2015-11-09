@@ -11,25 +11,22 @@
       </div>
     </div>
     </div>
-      <div class="about"><?php the_field('title'); ?></div>
+      <div class="about"><?php the_field('title'); ?>
+      </div>
+      <div class="content container">
       <div class="aboutBlurbs">
-        <div class="left">
-          <i class="fa fa-angle-double-right"></i>
-          <?php the_field('education'); ?>
-        </div>
-         <div class="right">
-          <i class="fa fa-angle-double-right"></i>
+         <div>
           <?php the_field('services'); ?>
         </div>
-        <div class="left">
-          <i class="fa fa-angle-double-right"></i>
-          <?php the_field('personal'); ?>
-        </div>
-        <div class="right">
-          <i class="fa fa-angle-double-right"></i>
+         <div>
           <?php the_field('tools'); ?>
         </div>
+        <div>
+          <?php the_field('personal'); ?>
+        </div>
       </div>
+    </div>
+    <?php do_shortcode('[ap_instagram_slider]'); ?>
       <?php endwhile; // end the loop?>
 
     </div> <!-- /,content -->
